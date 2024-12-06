@@ -71,7 +71,7 @@ public class ListTest {
         intList.add(3);
         intList.add(4);
 
-        int removed = intList.remove(2);
+        Integer removed = intList.remove(2);
 
         assertAll(
                 () -> assertEquals(4, intList.size(), "The list should have size 4"),
