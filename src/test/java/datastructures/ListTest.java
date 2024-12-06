@@ -1,7 +1,6 @@
 package datastructures;
 
-import static org.junit.jupiter.api.Assertions.assertAll;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * @author Vincent Velthuizen
@@ -72,7 +71,7 @@ public class ListTest {
         intList.add(3);
         intList.add(4);
 
-        int removed = intList.remove(2);
+        Integer removed = intList.remove(2);
 
         assertAll(
                 () -> assertEquals(4, intList.size(), "The list should have size 4"),
@@ -92,7 +91,7 @@ public class ListTest {
         intList.add(3);
         intList.add(4);
 
-        int removed = intList.remove(0);
+        Integer removed = intList.remove(0);
 
         assertAll(
                 () -> assertEquals(4, intList.size(), "The list should have size 4"),
@@ -112,7 +111,7 @@ public class ListTest {
         intList.add(3);
         intList.add(4);
 
-        int removed = intList.remove(4);
+        Integer removed = intList.remove(4);
 
         assertAll(
                 () -> assertEquals(4, intList.size(), "The list should have size 4"),
@@ -129,7 +128,7 @@ public class ListTest {
         intList.add(0);
         intList.add(1);
 
-        int removed = intList.remove(0);
+        Integer removed = intList.remove(0);
 
         assertAll(
                 () -> assertEquals(1, intList.size(), "The list should have size 1"),
@@ -142,7 +141,7 @@ public class ListTest {
         intList.add(0);
         intList.add(1);
 
-        int removed = intList.remove(1);
+        Integer removed = intList.remove(1);
 
         assertAll(
                 () -> assertEquals(1, intList.size(), "The list should have size 1"),
@@ -154,7 +153,7 @@ public class ListTest {
     public static <L extends List<Integer>> void removeOnlyElement(L intList) {
         intList.add(0);
 
-        int removed = intList.remove(0);
+        Integer removed = intList.remove(0);
 
         assertAll(
                 () -> assertEquals(0, intList.size(), "The list should have size 1"),
