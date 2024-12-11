@@ -56,7 +56,7 @@ public class DoubleEndedDoublyLinkedList<E> extends AbstractList<E> {
             tail = newNode;
         }
 
-        if (index > 1 && index < size) {
+        if (index > 0 && index < size) {
             Node<E> current = findNodeAt(index);
 
             current.getPrevious().setNext(newNode);
